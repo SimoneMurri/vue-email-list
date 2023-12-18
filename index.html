@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Vue 3 API
+    </title>
+
+<!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+        <main>
+            <ul v-if="emailList.length >= 10">
+                <li v-for="email in emailList">{{ email }}</li>
+            </ul>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
